@@ -29,7 +29,7 @@ public class EmailRule: RegexRule {
 public class WebsiteRule: RegexRule {
     
     /// Regular express string to be used in validation.
-    static let regex = "(http|https|ftp|Ftp|SMTP|smtp|Http|Https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+"
+    static let regex = “(((http|https|ftp|Ftp|SMTP|smtp|Http|Https)?)://)?(([\\w\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+\\=\\(\\)\\[\\]\\{\\}\\?\\<\\>])*)+([\\.|/](([\\w\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+\\=\\(\\)\\[\\]\\{\\}\\?\\<\\>])+))+”
 
     
     /**
@@ -47,7 +47,7 @@ public class GoogleRule: RegexRule {
     
     /// Regular express string to be used in validation.
     
-    static let regex = "(http|https|Http|Https)://(plus.google.com)(/[A-Z0-9a-z._?%+-]+)([\\.|/]((\\w)*|([0-9]*)|([A-Z0-9a-z._%+-]*)|([-|_])*))+"
+    static let regex = "((http|https|Http|Https)://(plus.google.com)(/[A-Z0-9a-z._?%+-]))([\\.|/]((\\w)*|([0-9]*)|([A-Z0-9a-z._%+-]*)|([-|_])*))*"
 
     /**
      Initializes an `Google` object to validate an Google field.
