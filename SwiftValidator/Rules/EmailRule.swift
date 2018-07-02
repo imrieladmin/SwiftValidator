@@ -29,7 +29,7 @@ public class EmailRule: RegexRule {
 public class WebsiteRule: RegexRule {
     
     /// Regular express string to be used in validation.
-    static let regex = “(((http|https|ftp|Ftp|SMTP|smtp|Http|Https)?)://)?(([\\w\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+\\=\\(\\)\\[\\]\\{\\}\\?\\<\\>])*)+([\\.|/](([\\w\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+\\=\\(\\)\\[\\]\\{\\}\\?\\<\\>])+))+”
+    static let regex = "(((http|https|ftp|Ftp|SMTP|smtp|Http|Https)?)://)?(([\\w\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+\\=\\(\\)\\[\\]\\{\\}\\?\\<\\>])*)+([\\.|/](([\\w\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+\\=\\(\\)\\[\\]\\{\\}\\?\\<\\>])+))+"
 
     
     /**
