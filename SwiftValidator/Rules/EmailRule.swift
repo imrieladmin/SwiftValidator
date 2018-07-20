@@ -47,7 +47,7 @@ public class GoogleRule: RegexRule {
     
     /// Regular express string to be used in validation.
     
-    static let regex = "((http|https|Http|Https)://(plus.google.com)(/[A-Z0-9a-z._?%+-]))([\\.|/]((\\w)*|([0-9]*)|([A-Z0-9a-z._%+-]*)|([-|_])*))*"
+    static let regex = "(http|https|Http|Https)://(plus.google.com)(/[A-Z0-9a-z._?%+-]+)(([\\.|/]((\\w)*|([0-9]*)|([A-Z0-9a-z._?%+-]*)|([-|_])*))+)?"
 
     /**
      Initializes an `Google` object to validate an Google field.
@@ -94,7 +94,7 @@ public class TwitterRule: RegexRule {
 public class LinkedInRule: RegexRule {
     
     /// Regular express string to be used in validation.
-    static let regex = "(?:https?://)?(?:[a-zA-Z]+.)?(?:www.)?linkedin.com/([a-zA-Z0-9_]+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+)"
+    static let regex = "(?:https?://)?(?:[a-zA-Z]+.)?(?:www.)?linkedin.com(/[A-Z0-9a-z._?%+-]+)(([\\.|/]((\\w)*|([0-9]*)|([A-Z0-9a-z._?%+-]*)|([-|_])*))+)?"
 
     /**
      Initializes an `LinkedIn` object to validate an Google field.
@@ -106,6 +106,3 @@ public class LinkedInRule: RegexRule {
         self.init(regex: LinkedInRule.regex, message: message)
     }
 }
-
-
-
